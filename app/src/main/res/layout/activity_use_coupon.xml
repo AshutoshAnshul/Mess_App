@@ -32,20 +32,17 @@
         android:id="@+id/tvDATE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="276dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
         android:text="31-04-2018"
         android:textColor="#ffffff"
         android:textSize="28sp"
         android:typeface="serif"
         app:layout_constraintBottom_toTopOf="@+id/tvMEAL"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDAY"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvTime"
@@ -69,29 +66,6 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/tvDAY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="MONDAY"
-        android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:fontFamily="serif-monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
-
-    <TextView
         android:id="@+id/tvMEAL"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -109,37 +83,10 @@
         app:fontFamily="serif-monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531" />
-
-    <Button
-        android:id="@+id/btnApprove"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_bg1"
-        android:gravity="center_vertical"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:text="APPROVE"
-        android:focusable="true"
-        android:clickable="true"
-        android:foreground="@drawable/onclick_effect_circle"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.788" />
 
     <TextView
         android:id="@+id/tvMsg"
@@ -147,8 +94,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:textAlignment="center"
@@ -158,9 +103,22 @@
         app:fontFamily="cursive"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageView
+        android:id="@+id/iv_qrcode"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMEAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDATE"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
 </android.support.constraint.ConstraintLayout>

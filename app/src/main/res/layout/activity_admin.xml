@@ -11,7 +11,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -162,19 +164,32 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/scan"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg"
+                android:foreground="@drawable/onclick_effect"
+                android:text="Scan"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/btnaResetPass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
                 android:id="@+id/btn_refresh"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_gravity="end"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/btn_bg"
+                android:foreground="@drawable/onclick_effect"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:layout_gravity="end"
                 android:text="refresh"
-                android:foreground="@drawable/onclick_effect"
                 android:textColor="#ffffff"
                 app:layout_constraintBottom_toTopOf="@+id/btnaResetPass"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -328,25 +343,24 @@
                 android:id="@+id/btnaResetPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="50dp"
-                android:layout_gravity="center_horizontal"
                 android:background="@drawable/btn_bg"
+                android:foreground="@drawable/onclick_effect"
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
                 android:text="Reset Password"
-                android:foreground="@drawable/onclick_effect"
                 android:textColor="#ffffff"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
 
 
         </LinearLayout>

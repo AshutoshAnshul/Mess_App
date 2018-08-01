@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 public class Admin extends AppCompatActivity {
 
     private String DateT,DateTm;
-    private Button reset,refresh;
+    private Button reset,refresh,scanit;
     private TextView tDate,tmDate;
     private TextView bf,ln,dn,ht,all;
     private TextView bf1,ln1,dn1,ht1,all1;
@@ -81,6 +81,13 @@ public class Admin extends AppCompatActivity {
                 startActivity(new Intent(Admin.this,Change_Pass_Admin.class));
             }
         });
+
+        scanit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Admin.this,Scan_It.class));
+            }
+        });
     }
 
     private void setVar(){
@@ -98,6 +105,7 @@ public class Admin extends AppCompatActivity {
         ht1=findViewById(R.id.tvaHighTeaN);
         dn1=findViewById(R.id.tvaDinnerN);
         all1=findViewById(R.id.tvaAllN);
+        scanit=findViewById(R.id.scan);
     }
     private void getCoupons(){
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
